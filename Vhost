@@ -9,9 +9,9 @@
 #ServerName www.example.com
 
 ServerAdmin webmaster@localhost
-DocumentRoot /var/www/devops-sample-vestibulares/app/templates/app
-ServerName www.devops-vestibulares.com.br
-<Directory "/www/devops-sample-vestibulares">
+DocumentRoot /var/www/introducao-html-css
+ServerName www.introducao-html-css.com.br
+<Directory "/www/introducao-html-css">
 Require all granted
 </Directory>
 
