@@ -77,11 +77,14 @@ Vagrant.configure("2") do |config|
   
   #sudo apt-get -y install python  
   git clone https://github.com/edsonbenites/devops-sample-vestibulares.git /var/www/devops-sample-vestibulares
-  git clone https://github.com/edsonbenites/html-docs-hello-world.git /var/www/html-docs-hello-world
-  git clone https://github.com/edsonbenites/devops-aula13.git /var/www/devops-aula13
-  # git clone https://github.com/edsonbenites/Apache2-vagrant.git /etc/apache2/sites-enable
+  # git clone https://github.com/edsonbenites/html-docs-hello-world.git /var/www/html-docs-hello-world
+  # git clone https://github.com/edsonbenites/devops-aula13.git /var/www/devops-aula13
+  git clone https://github.com/edsonbenites/introducao-html-css.git /var/www/introducao-html-css
+  git clone https://github.com/edsonbenites/Apache2-vagrant.git
   # git clone https://github.com/mattdesl/simple-html-index.git /var/www/simple-html-index
-  sudo /etc/init.d/apache2 start  
+  sudo cp /Apache2-vagrant/Vhost.conf /etc/Apache2/sites-enable
+  sudo /etc/init.d/apache2 stop
+  sudo /etc/init.d/apache2 start
 
   SHELL
 end
